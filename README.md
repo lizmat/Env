@@ -3,7 +3,7 @@
 NAME
 ====
 
-Env - Implement Perl 5's Env module
+Env - Port of Perl 5's Env module
 
 SYNOPSIS
 ========

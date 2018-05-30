@@ -1,6 +1,6 @@
 use v6.c;
 
-module Env:ver<0.0.1>:auth<cpan:ELIZABETH> { }
+module Env:ver<0.0.2>:auth<cpan:ELIZABETH> { }
 
 # Since we cannot use the normal EXPORT mechanism, we need to resort to some
 # deep magic, originally conceived by Zoffix Znet.  Since EXPORT is run at
@@ -85,7 +85,7 @@ sub EXPORT(*@keys) {
 
 =head1 NAME
 
-Env - Implement Perl 5's Env module
+Env - Port of Perl 5's Env module
 
 =head1 SYNOPSIS
 
