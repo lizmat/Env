@@ -1,11 +1,11 @@
 use v6.c;
 
-module Env:ver<0.0.2>:auth<cpan:ELIZABETH> { }
+module Env:ver<0.0.3>:auth<cpan:ELIZABETH> { }
 
 # Since we cannot use the normal EXPORT mechanism, we need to resort to some
 # deep magic, originally conceived by Zoffix Znet.  Since EXPORT is run at
 # compile time, the $*W object is available, which refers to the nqp World
-# object (from src/Perl/World.nqp).  This class has 2 methods that are being
+# object (from src/Perl6/World.nqp).  This class has 2 methods that are being
 # used by the normal export process:
 #
 # - cur_lexpad
@@ -85,7 +85,7 @@ sub EXPORT(*@keys) {
 
 =head1 NAME
 
-Env - Port of Perl 5's Env module
+Env - Port of Perl's Env module
 
 =head1 SYNOPSIS
 
@@ -95,8 +95,8 @@ Env - Port of Perl 5's Env module
 
 =head1 DESCRIPTION
 
-Perl 6 maintains environment variables in a special hash named C<%*ENV>.
-For when this access method is inconvenient, the Perl 6 module Env allows
+Raku maintains environment variables in a special hash named C<%*ENV>.
+For when this access method is inconvenient, the Raku module Env allows
 environment variables to be treated as scalar or array variables.
 
 The C<Env> binds environment variables with suitable names to "our" Perl
@@ -143,7 +143,7 @@ To remove a bound environment variable from the environment, undefine it:
 
 If you're only interested in a few environment variables to be exported to
 your lexical context as constants, you can use the auto-destructuring feature
-of signatures in Perl 6:
+of signatures in Raku:
 
     my (:$PATH, :$SHELL, *%) := %*ENV;
 
@@ -163,9 +163,9 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

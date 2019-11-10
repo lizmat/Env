@@ -2,6 +2,9 @@ Revision history for Env
 
 {{$NEXT}}
 
+0.0.3  2019-11-10T13:23:25+01:00
+    - change Perl 6 to Raku, and Perl 5 to Perl
+
 0.0.2  2018-05-30T15:45:06+02:00
     - Change name of module to be in line with other ports
 
