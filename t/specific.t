@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 
 use Env;
@@ -40,4 +40,4 @@ is-deeply @PATH, @thePATH, 'did we get a correctly restored PATH';
 is (%*ENV<PATH> = Nil), Nil, 'did the change to the environment propagate';
 nok %*ENV<PATH>:exists, 'did we actually remove PATH from %*ENV';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

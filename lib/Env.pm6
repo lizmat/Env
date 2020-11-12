@@ -1,6 +1,6 @@
-use v6.c;
+use v6.d;
 
-module Env:ver<0.0.3>:auth<cpan:ELIZABETH> { }
+module Env:ver<0.0.4>:auth<cpan:ELIZABETH> { }
 
 # Since we cannot use the normal EXPORT mechanism, we need to resort to some
 # deep magic, originally conceived by Zoffix Znet.  Since EXPORT is run at
@@ -85,7 +85,7 @@ sub EXPORT(*@keys) {
 
 =head1 NAME
 
-Env - Port of Perl's Env module
+Raku port of Perl's Env module
 
 =head1 SYNOPSIS
 
@@ -94,6 +94,9 @@ Env - Port of Perl's Env module
     use Env <$SHELL @LD_LIBRARY_PATH>;
 
 =head1 DESCRIPTION
+
+This module tries to mimic the behaviour of Perl's C<Env> module
+as closely as possible in the Raku Programming Language.
 
 Raku maintains environment variables in a special hash named C<%*ENV>.
 For when this access method is inconvenient, the Raku module Env allows
@@ -163,7 +166,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
@@ -171,4 +174,4 @@ This library is free software; you can redistribute it and/or modify it under th
 
 =end pod
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

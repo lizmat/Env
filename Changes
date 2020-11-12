@@ -2,6 +2,11 @@ Revision history for Env
 
 {{$NEXT}}
 
+0.0.4  2020-11-12T13:42:10+01:00
+    - Change name of distribution
+    - Force to highest possible Raku version
+    - Update copyright year
+
 0.0.3  2019-11-10T13:23:25+01:00
     - change Perl 6 to Raku, and Perl 5 to Perl
 

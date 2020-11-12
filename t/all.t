@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 
 use Env;
@@ -22,4 +22,4 @@ $USER = Nil;
 is $USER, Nil,          'did we actually reset $USER';
 nok %*ENV<USER>:exists, 'did we actually remove it from %*ENV';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

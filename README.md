@@ -1,7 +1,7 @@
 NAME
 ====
 
-Env - Port of Perl's Env module
+Raku port of Perl's Env module
 
 SYNOPSIS
 ========
@@ -12,6 +12,8 @@ SYNOPSIS
 
 DESCRIPTION
 ===========
+
+This module tries to mimic the behaviour of Perl's `Env` module as closely as possible in the Raku Programming Language.
 
 Raku maintains environment variables in a special hash named `%*ENV`. For when this access method is inconvenient, the Raku module Env allows environment variables to be treated as scalar or array variables.
 
@@ -69,7 +71,7 @@ Source can be located at: https://github.com/lizmat/Env . Comments and Pull Requ
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
