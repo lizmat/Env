@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/Env/workflows/test/badge.svg)](https://github.com/lizmat/Env/actions)
+
 NAME
 ====
 
@@ -64,14 +66,14 @@ This will still collide with already defined variables (such as `$_`). This can 
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/Env . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
